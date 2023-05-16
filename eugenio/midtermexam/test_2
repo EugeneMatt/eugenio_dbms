@@ -1,0 +1,20 @@
+CREATE DATABASE Anything; USE
+    Anything;
+CREATE TABLE student_name(
+    StudNo INT PRIMARY KEY AUTO_INCREMENT,
+    StudFName VARCHAR(20),
+    StudLName VARCHAR(20),
+    Gender ENUM('Male', 'Female'),
+    HomeAddress VARCHAR(30),
+    Major ENUM('COE', 'ECE')
+); CREATE TABLE subject(
+    SubjCode VARCHAR(10),
+    SubjDescr VARCHAR(20)
+	CONSTRAINT subjectFK FOREIGN KEY (StudCode) REFERENCES student (SubjDescr)
+); CREATE TABLE grades(
+    grade_id INT PRIMARY KEY AUTO_INCREMENT,
+    StudNo VARCHAR(10),
+    grades INT(DOUBLE),
+    SubjCode VARCHAR(10),
+CONSTRAINT gradeFK FOREIGN KEY (SubjectCode) REFERENCES grade (SubjectCode)
+);
