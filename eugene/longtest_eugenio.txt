@@ -1,0 +1,19 @@
+CREATE DATABASE student_infos; USE
+    student_infos;
+CREATE TABLE ACCOUNT(
+    StudNo VARCHAR(10) PRIMARY KEY,
+    StudFName VARCHAR(20),
+    StudLName VARCHAR(20),
+    Major VARCHAR(10),
+    Gender ENUM('F', 'M'),
+    HomeAddress VARCHAR(20)
+); CREATE TABLE SUBJECT(
+    SubjectCode VARCHAR(10) PRIMARY KEY,
+    SubjectDescr VARCHAR(10)
+); CREATE TABLE GRADE(
+    StudNo VARCHAR(50),
+    SubjectCode VARCHAR(20),
+    Grade DECIMAL(4, 2),
+    CONSTRAINT StudNoFK FOREIGN KEY(StudNo) REFERENCES ACCOUNT(StudNo),
+    CONSTRAINT SubjectCodeFK FOREIGN KEY(SubjectCode) REFERENCES SUBJECT(SubjectCode)
+);

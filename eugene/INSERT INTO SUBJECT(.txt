@@ -1,0 +1,13 @@
+INSERT INTO SUBJECT(
+    SubjectCode,
+    SubjectDescr
+)
+VALUES("CHEM 123", "Chemistry"),("Trigonometry",),("MATH 123", "Algebra");
+INSERT INTO Grade(StudNo, SubjectCode, Grade)
+VALUES
+(S_101, "Chem 123", 2.00),(S_101, "Math 122", 1.00),(S_101, "Math 123", 1.50),
+(S_102, "Chem 123", 1.75),(S_102, "Math 122", 1.25),(S_102, "Math 123", 1.50),
+(S_103, "Chem 123", 2.00),(S_103, "Math 122", 1.75),(S_103, "Math 123", 1.25),
+(S_104, "Chem 123", 1.25),(S_104, "Math 122", 2.25),(S_104, "Math 123", 2.50),
+(S_105, "Chem 123", 1.00),(S_105, "Math 122", 1.25),(S_105, "Math 123", 2.50),
+(S_106, "Chem 123", 1.25),(S_106, "Math 122", 1.50),(S_106, "Math 123", 1.75);
