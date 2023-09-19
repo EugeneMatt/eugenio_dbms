@@ -1,0 +1,35 @@
+using System;
+
+class Student{
+    public string student_name = "Matt";
+    public string age = "21";
+    public string school_id = "5024"; 
+    public string subject = "OOP";
+    public string course = "BSIT";
+}
+
+//class School : Student{
+    //public string student_name ="Matt";
+    //public string Student ="Matt";
+} 
+
+//class Subject : Student{
+   // public string subj_code ="";
+    //public string display_student{
+        //return student_name;
+        //return student_name;
+        //return student_name;
+    }
+}
+class HelloWorld {
+  static void Main() {
+    Console.WriteLine("Hello World");
+    
+    Student stud1 = new Student();
+    Console.WriteLine(stud1.name + stud1.age + stud1.school_id + stud1.subject + stud1.course);
+    
+    //School subj = new Subject();
+     //Console.WriteLine();
+    
+  }
+}
